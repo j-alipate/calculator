@@ -1,4 +1,3 @@
-//This function returns innerHTML of key when clicked.
 let values = [];//this is where values will be stored.
 let operator;//this is where the operand will be stored.
 
