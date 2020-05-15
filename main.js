@@ -15,7 +15,11 @@ function keyDirector(key){
             displayedText.innerHTML = eValuate(values, operator);
         }
     }else if("ACCE".includes(key)){                              //if clear is pressed
+        if(key == "AC"){
             clearAll();
+        }else{
+            displayedText.innerHTML = displayedText.innerHTML.slice(0, -1); //if CE is pressed
+        }
     }else{                                                       //if equals is pressed
         if(typeof operator != undefined){
             values = displayedText.innerHTML.split(operator);
